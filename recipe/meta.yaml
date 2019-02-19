@@ -22,7 +22,7 @@ requirements:
     - python
     - defusedxml
     - pandas
-    - yaml
+    - pyyaml
     - jinja2
 
 test:
