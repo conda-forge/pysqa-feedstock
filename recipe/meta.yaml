@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -30,7 +30,7 @@ test:
     - pysqa
 
 about:
-  home: https://github.com/pysqa/pysqa
+  home: https://github.com/pyiron/pysqa
   license: BSD-3-Clause
   license_family: BSD
   license_file: 'LICENSE'
@@ -43,9 +43,10 @@ about:
     access. After the submission pysqa allows the users to track the progress of their jobs, delete them 
     or enable reservations using the built-in functionality of the queuing system. The currently supported 
     queuing systems are: LFS, MOAB, SGE, SLURM, TORQUE.
-  doc_url: https://github.com/pysqa/pysqa
-  dev_url: https://github.com/pysqa/pysqa
+  doc_url: https://github.com/pyiron/pysqa
+  dev_url: https://github.com/pyiron/pysqa
 
 extra:
   recipe-maintainers:
     - jan-janssen
+    - pyiron-runner
