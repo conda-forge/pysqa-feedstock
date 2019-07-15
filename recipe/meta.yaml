@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3ffc943f3ad9021afc058800173c565acca357ade9857691e5bafadaec71152b
+  sha256: f512f36019a2d39f3ffc1711959d897ab35e515d9fdf5aba3f849e90c51955b0
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
