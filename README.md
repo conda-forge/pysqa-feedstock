@@ -1,11 +1,7 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pysqa
 ===========
 
-Home: https://github.com/pysqa/pysqa
+Home: https://github.com/pyiron/pysqa
 
 Package license: BSD-3-Clause
 
@@ -25,8 +21,15 @@ queuing systems are: LFS, MOAB, SGE, SLURM, TORQUE.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pysqa-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pysqa-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6209&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pysqa-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -121,4 +124,5 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@pyiron-runner](https://github.com/pyiron-runner/)
 
