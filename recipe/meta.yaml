@@ -21,10 +21,11 @@ requirements:
   run:
     - python
     - defusedxml
-    - pandas
+    - pandas >=0.23
     - pyyaml
     - jinja2
     - paramiko
+    - tqdm
 
 test:
   imports:
