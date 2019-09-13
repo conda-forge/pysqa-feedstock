@@ -24,6 +24,7 @@ requirements:
     - pandas
     - pyyaml
     - jinja2
+    - paramiko
 
 test:
   imports:
