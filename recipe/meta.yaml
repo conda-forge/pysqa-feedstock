@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python
+    - pip
     - defusedxml
     - pandas >=0.23
     - pyyaml
@@ -30,6 +31,8 @@ requirements:
 test:
   imports:
     - pysqa
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pyiron/pysqa
