@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0859ddcd761cff8ce5dff7e4dedf87064fa2464f297d691385e5aa6c7becfbe9
+  sha256: 29da813f86d58f8ee39c4194744e4f34c341ee83961a8591b9199f7d99c09995
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -38,8 +38,8 @@ about:
   home: https://github.com/pyiron/pysqa
   license: BSD-3-Clause
   license_family: BSD
-  license_file: 'LICENSE'
-  summary: 'Simple queue adapter for Python'
+  license_file: LICENSE
+  summary: Simple queue adapter for Python
   description: |
     The goal of pysqa is to make submitting to an HPC cluster as easy as starting another subprocess. 
     This is based on the assumption that even though modern queuing systems allow for an wide range of 
