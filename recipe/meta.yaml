@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 29da813f86d58f8ee39c4194744e4f34c341ee83961a8591b9199f7d99c09995
+  sha256: 5ad633c7a165063c3104369710b6d3a35f18d397b57d8cdae6bef71062f5025e
 
 build:
   noarch: python
