@@ -5,7 +5,7 @@ Home: https://github.com/pyiron/pysqa
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple queue adapter for Python
 
