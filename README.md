@@ -5,9 +5,13 @@ Home: https://github.com/pyiron/pysqa
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysqa-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simple queue adapter for Python
+
+Development: https://github.com/pyiron/pysqa
+
+Documentation: https://github.com/pyiron/pysqa
 
 The goal of pysqa is to make submitting to an HPC cluster as easy as starting another subprocess.
 This is based on the assumption that even though modern queuing systems allow for an wide range of
