@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -53,5 +53,8 @@ about:
 
 extra:
   recipe-maintainers:
-    - jan-janssen
     - pyiron-runner
+    - jan-janssen
+    - pmrv
+    - muh-hassani
+    - niklassiemer
