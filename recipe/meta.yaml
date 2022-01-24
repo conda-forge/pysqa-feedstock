@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,7 +27,6 @@ requirements:
     - jinja2 >=2.11.3
     - paramiko >=2.7.2
     - tqdm >=4.56.0
-    - openssl <2
 
 test:
   imports:
