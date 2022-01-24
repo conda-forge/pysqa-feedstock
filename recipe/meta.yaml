@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f067e359da6c5c83866b8497acc3bee6a82976b2a625a24b35a6c2d1fccf4849
+  sha256: 00f3451105a0d1d69d7e60ecec2eaa21352502ea9af936bcaa29fbcef7332da6
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - jinja2 >=2.11.3
     - paramiko >=2.7.2
     - tqdm >=4.56.0
+    - openssl <2
 
 test:
   imports:
