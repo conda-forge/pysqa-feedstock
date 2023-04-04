@@ -1,11 +1,11 @@
-About pysqa
-===========
+About pysqa-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysqa-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyiron/pysqa
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysqa-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple queue adapter for Python
 
