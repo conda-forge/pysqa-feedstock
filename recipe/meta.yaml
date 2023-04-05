@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -57,5 +57,4 @@ extra:
     - pyiron-runner
     - jan-janssen
     - pmrv
-    - muh-hassani
     - niklassiemer
