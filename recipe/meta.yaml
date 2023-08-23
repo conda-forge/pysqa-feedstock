@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c9948cca3f2655f0dde7e2186b5c519958167574694e1bd5cd12b66381f1e64
+  sha256: 7796238b1ba329d649b803cf546c973824053bad60b46bd2a6e2cae9b80075a5
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
     - pip
     - defusedxml >=0.7.1
     - pandas >=2.0.3
-    - pyyaml >=6.0
+    - pyyaml >=6.0.1
     - jinja2 >=3.1.2
-    - paramiko >=3.2.0
-    - tqdm >=4.65.0
-    - pympipool >=0.5.4
+    - paramiko >=3.3.1
+    - tqdm >=4.66.1
+    - pympipool >=0.6.2
     - cloudpickle >=2.2.1
 
 test:
