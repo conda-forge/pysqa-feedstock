@@ -10,6 +10,7 @@ source:
   sha256: fa7316174f00ceb6a29167e157cefca1e6d443170db58760fdfec891a0136d78
   patches:
     - pympipool.patch
+    - versioneer.patch
 
 build:
   entry_points:
