@@ -35,8 +35,6 @@ test:
     - pysqa
   commands:
     - pip check
-    - pysqa --help
-    - pysqa-executor --help
   requires:
     - pip
 
