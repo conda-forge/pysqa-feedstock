@@ -8,10 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
   sha256: d8eb78d0743adafb963e058ee54678887c5ecaf12f74b24b14f98c24461ed6c6
-  patches:
-    - pympipool.patch
-    - versioneer.patch
-    - cmd.patch
 
 build:
   entry_points:
