@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - jinja2 >=3.1.2
     - pandas >=2.1.1
     - pyyaml >=6.0.1
