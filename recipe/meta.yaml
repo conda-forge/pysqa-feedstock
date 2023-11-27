@@ -21,7 +21,7 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - jinja
+    - jinja2
     - pandas
     - pyyaml
   run:
