@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
-  sha256: fe957c5690d2abd23f929f82daefc21fd159ec41738a6c881fda9c3b4ac4a96c
+  sha256: fdc37e0178649750e7386b4e9b8287693ee2d47559723c11b9ad42afcfc55900
 
 build:
   entry_points:
