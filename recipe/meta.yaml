@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.1.21" %}
+{% set version = "0.1.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
-  sha256: 75722fcdcf78dde793dcc610079095cad75cdbf26f380fc2b4f8f17f0ae2da30
+  sha256: 007606ea7ac25ccf9e3f847324c9842cc7d41dca3f654ace745fcf3c9df607da
 
 build:
   entry_points:
@@ -29,8 +29,8 @@ requirements:
   run:
     - python >=3.7
     - jinja2 >=2.11.3,<=3.1.4
-    - pandas >=1.5.3,<=2.2.2
-    - pyyaml >=5.3.1,<=6.0.1
+    - pandas >=1.5.3,<=2.2.3
+    - pyyaml >=5.3.1,<=6.0.2
 
 test:
   imports:
