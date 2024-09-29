@@ -11,8 +11,7 @@ source:
 
 build:
   entry_points:
-    - pysqa=pysqa.cmd:command_line
-    - pysqa-executor=pysqa.executor.backend:command_line
+    - pysqa=pysqa.core.cmd:command_line
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
