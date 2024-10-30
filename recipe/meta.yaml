@@ -25,6 +25,7 @@ requirements:
     - pyyaml
     - versioneer
     - toml
+    - setuptools
   run:
     - python >=3.7
     - jinja2 >=2.11.3,<=3.1.4
