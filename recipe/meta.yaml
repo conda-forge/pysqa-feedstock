@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
   sha256: b09bcb9725c7d2fdd7c61b820c8ab2947716b1b58dbc7d4cbba9223031c60231
 
 build:
@@ -14,11 +14,11 @@ build:
     - pysqa=pysqa.base.cmd:command_line
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - jinja2
     - pandas
@@ -27,7 +27,7 @@ requirements:
     - toml
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - jinja2 >=2.11.3,<=3.1.4
     - pandas >=1.5.3,<=2.2.3
     - pyyaml >=5.3.1,<=6.0.2
@@ -40,6 +40,7 @@ test:
     - pysqa --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyiron/pysqa
