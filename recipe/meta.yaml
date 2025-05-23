@@ -1,5 +1,5 @@
 {% set name = "pysqa" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysqa-{{ version }}.tar.gz
-  sha256: daff734abe1b2eeabb6edfe972987f8bc0cf3ce3ccd2a62311a22d89d0ffa54b
+  sha256: 16ec2f2b9296ec8878564b3107b399530feba13d9027cb2f2e7e04d414703676
 
 build:
   entry_points:
@@ -23,9 +23,8 @@ requirements:
     - jinja2
     - pandas
     - pyyaml
-    - versioneer
-    - toml
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - jinja2 >=2.11.3,<=3.1.6
