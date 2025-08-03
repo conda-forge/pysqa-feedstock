@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysqa
-  version: 0.2.7
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysqa-${{ version }}.tar.gz
-  sha256: f44f2e58cf7645c61d266718e423ba48c6d3362dc65ceefe71143b88db1ac4e6
+  sha256: 0ef7f05c6b475cb76df3d31aad0b9499b051a0985fdb464a995e5d7d15c0f853
 
 build:
   number: 1
