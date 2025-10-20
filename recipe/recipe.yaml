@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysqa
-  version: "0.3.2"
+  version: "0.3.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysqa-${{ version }}.tar.gz
-  sha256: 9a9a8c31a9a911d8de22ca266779eeea7a7fda02db3334e1d2b154e0e02d0d1f
+  sha256: d7ab5fc84da2b523328535668add42f8951b03718ed913a4198476f38621a7e9
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - python >=${{ python_min }}
     - jinja2 >=2.11.3,<=3.1.6
     - pandas >=1.5.3,<=2.3.3
-    - pyyaml >=5.3.1,<=6.0.2
+    - pyyaml >=5.3.1,<=6.0.3
 
 tests:
   - python:
