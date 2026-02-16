@@ -24,7 +24,7 @@ index 7f1a1991..dd06882e 100644
 -{%- if dependency %}
 -#SBATCH --dependency=afterok:{{ dependency | join(',') }}
 +{%- if dependency_list %}
-+#SBATCH --dependency_list=afterok:{{ dependency_list | join(',') }}
++#SBATCH --dependency=afterok:{{ dependency_list | join(',') }}
  {%- endif %}
  {%- if memory_max %}
  #SBATCH --mem={{memory_max}}G
