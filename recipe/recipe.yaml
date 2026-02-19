@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysqa
-  version: "0.3.4"
+  version: "0.3.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysqa-${{ version }}.tar.gz
-  sha256: 60afd4ab89812b1c02a212efc36895141ff28842890664966139f8c0a717cb62
-  patches:
-    - dependencies.patch
+  sha256: 7ea1b42e457ef1a47367f68c3919e4ae904a01e6278157bdabe2e1527be612b6
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -34,7 +32,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - jinja2 >=2.11.3,<=3.1.6
-    - pandas >=1.5.3,<=3.0.0
+    - pandas >=1.5.3,<=3.0.1
     - pyyaml >=5.3.1,<=6.0.3
 
 tests:
@@ -58,7 +56,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - srmnitc
     - pyiron-runner
     - jan-janssen
-    - pmrv
