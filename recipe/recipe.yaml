@@ -11,11 +11,9 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysqa-${{ version }}.tar.gz
   sha256: 7ea1b42e457ef1a47367f68c3919e4ae904a01e6278157bdabe2e1527be612b6
-  patches:
-    - dependencies.patch
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -34,7 +32,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - jinja2 >=2.11.3,<=3.1.6
-    - pandas >=1.5.3,<=3.0.0
+    - pandas >=1.5.3,<=3.0.1
     - pyyaml >=5.3.1,<=6.0.3
 
 tests:
