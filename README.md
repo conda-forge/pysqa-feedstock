@@ -145,6 +145,3 @@ Feedstock Maintainers
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@pyiron-runner](https://github.com/pyiron-runner/)
 
-
-<!-- dummy commit to enable rerendering -->
-
