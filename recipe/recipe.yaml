@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysqa
-  version: "1.1.1"
+  version: 1.1.2
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysqa-${{ version }}.tar.gz
-  sha256: ec3d103feee9eceaf36d698650e77a9b2c3f5cebf9aa3bd3c8702ce1a99d525a
+  sha256: d6eafb77fdedd38259356e1e97c01bec8dc780b93728db2d50d7441b147eb6d9
 
 build:
   number: 0
@@ -31,9 +31,9 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - jinja2 >=2.11.3,<3.2.0
-    - pandas >=1.5.3,<3.1.0
-    - pyyaml >=5.3.1,<6.1.0
+    - jinja2 ==3.1.6
+    - pandas >=1.5.3,<3.2.0
+    - pyyaml ==6.0.3
 tests:
   - python:
       imports:
